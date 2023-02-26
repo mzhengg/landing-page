@@ -35,7 +35,7 @@ div {
 }
 ```
 
-Here, all three <div> elements would be selected, while the <p> element wouldn’t be.
+Here, all three `<div>` elements would be selected, while the `<p>` element wouldn’t be.
 
 ### Class Selectors
 
