@@ -237,3 +237,16 @@ img {
 ```
 
 It’s best to include both of these properties for `<img>` elements, even if you don’t plan on adjusting the values from the image file’s original ones. When these values aren’t included, if an image takes longer to load than the rest of the page contents, the image won’t take up any space on the page at first, but will suddenly cause a drastic shift of the other page contents once it does load in. Explicitly stating a height and width prevents this from happening, as space will be “reserved” on the page and will just appear as a blank space until the image loads.
+
+## The Box Model
+
+Every single thing on a webpage is a rectangular box. These boxes can have other boxes in them and can sit alongside one another.  
+
+In the end, laying out a webpage and positioning all its elements is deciding how you are going to nest and stack these boxes.  
+
+The only real complication here is that there are many ways to manipulate the size of these boxes, and the space between them, using padding, margin, and border. The assigned articles go into more depth on this concept, but to sum it up briefly:
+
+- `padding` increases the space between the border of a box and the content of the box.
+- `margin` increases the space between the borders of a box and the borders of adjacent boxes.
+- `border` adds space (even if it’s only a pixel or two) between the margin and the padding.
+
