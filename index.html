@@ -1,0 +1,92 @@
+<!-- type ! + enter to initalize html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <!-- link html to css file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- need to encapsulate in a flex box, so a div is needed to containerize the items -->
+        <header>
+            <!-- this container's class will be 'header-container' to be styled in the css file -->
+            <div class="header-container">
+                <!-- top left item-->
+                <div id="header-logo">Penny's Fan Page</div>
+                <!-- top right items -->
+                <!-- class is for grouping common elements, id is for specific elements -->
+                <ul id="header-links">
+                    <!-- # is a placeholder for a link -->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Support Us</a></li>
+                </ul>
+            </div>
+
+            <!-- hero-main-container container-->
+            <div class="fanclub-container">
+                <!-- left part of hero-main-container-->
+                <div class="fanclub-left">
+                    <h1 id="fanclub-left-header">Welcome to the Penny Fanclub!</h1>
+                    <p id="fanclub-left-text">Here, we share pictures of the muffin cat, herself!</p>
+                    <button id="fanclub-left-button">Sign up</button>
+                </div>
+                <!-- right part of hero-main-container -->
+                <div class="fanclub-right">
+                    <img id="fanclub-penny-image" src="./images/Main_Penny.jpg">
+                </div>
+            </div>
+        </header>
+
+        <!-- no flex boxes used here, elements populate the page normally -->
+        <h2 id="fun-facts-header">Fun Facts About Penny</h2>
+        <!-- container to encaspulate all fun facts-->
+        <div class="fun-facts-container">
+            <div class="fun-facts-information">
+                <!-- alt provides an alternate for an image if it cannot be rendered -->
+                <img id="fun-facts-penny-image" src="./images/Face_Penny.jpg" alt="penny-face">
+                <p class="fun-facts-image-subtext">She is a Siamese cat with light blue eyes.</p>
+            </div>
+            <div class="fun-facts-information">
+                <img id="fun-facts-penny-image" src="./images/Seat_Penny.jpg" alt="penny-sleep">
+                <p class="fun-facts-image-subtext">She will keep your seat warm.</p>
+            </div>
+            <div class="fun-facts-information">
+                <img id="fun-facts-penny-image" src="./images/Window_Penny.jpg" alt="penny-window">
+                <p class="fun-facts-image-subtext">She loves to sunbathe by the window.</p>
+            </div>
+            <div class="fun-facts-information">
+                <img id="fun-facts-penny-image" src="./images/Bed_Penny.jpg" alt="penny-bed">
+                <p class="fun-facts-image-subtext">She <i>really</i> likes this pink star bed.</p>
+            </div>
+        </div>
+
+        <div class="quote-container">
+            <div class="quote-sub-container">
+                <!-- italicized paragraph -->
+                <em id="quote">Whether you're having a good or bad day, take a second to appreciate this muffin cat. She is undeniably adorable and derpy. All hail the queen of chicken kibble!</em>
+                <p id="quote-author">-Michael Zheng, Her Servant</p>
+            </div>
+        </div>
+
+        <div class="sign-up-container">
+            <div class="sign-up-sub-container">
+                <div class="sign-up-left">
+                    <h2 id="sign-up-left-header">Join the Penny fanclub! All hail the queen!</h2>
+                    <p id="sign-up-left-text">Click this button to become her servant.</p>
+                </div>
+                <div class="sign-up-right">
+                    <button id="sign-up-right-button">Sign up</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <a id="github-link" href="https://github.com/mzhengg">Michael's Github</a>
+        </div>
+    </body>
+</html>

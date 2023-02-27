@@ -1,0 +1,265 @@
+/* master class (contains styles common to all elements on page */
+* {
+    /* multiple fonts for backup in case browser doesn't support one or the other */
+    font-family: 'Roboto', sans-serif;
+    /* remove border */
+    margin: 0;
+    padding: 0;
+}
+
+/* creating css class for header tag */
+header {
+    background-image: url('images/PawBackground.jpg');
+    /* add padding (top/bottom and right/left) */
+    padding: 2em 13em;
+}
+
+/* creating css class for header-container class */
+.header-container {
+    /* setting the class as a flex box */
+    display: flex;
+    /* center elements vertically */
+    justify-content: space-between;
+    /* center elements horizontally */
+    align-items: baseline;
+}
+
+/* creating css id for header-logo id */
+#header-logo {
+    /* color of text */
+    color: #8133ef;
+    /* set font size */
+    font-size: 24px;
+}
+
+/* creating css id for header-text id */
+#header-links {
+    /* set font size */
+    font-size: 18px;
+    /* color of text */
+    color: #F9FAF8;
+}
+
+/* creating css class for ul tags */
+ul {
+    /* remove bullet points */
+    list-style-type: none;
+    /* make flex box to pivot into a row */
+    display: flex;
+    /* space between each element in the flex box */
+    gap: 1.5em;
+}
+
+/* creating css class for a tags */
+a {
+    /* removes hyperlink blue line */
+    text-decoration: none;
+    /* set link font size */
+    font-size: 18px;
+    /* set link color */
+    color: #8133ef;
+}
+
+/* creating css class for hero-main-container class */
+.fanclub-container {
+    /* set padding (refer to the box model) */
+    padding: 7em 0;
+    /* make flex box */
+    display: flex;
+    /* center element vertically */
+    justify-content: space-between;
+    /* center items horizontally */
+    align-items:center;
+    /* gap between items */
+    gap: 10em;
+}
+
+/* creating css class for .hero-main-container-left class */
+.fanclub-left {
+    /* make flex box */
+    display: flex;
+    /* make flex box orientation columnwise */
+    flex-direction: column;
+    /* gap between items */
+    gap: 2em;
+}
+
+/* creating css id for .hero-main-container-left-header class */
+#fanclub-left-header {
+    /* set font size */
+    font-size: 48px;
+    /* set boldness of font */
+    font-weight: bolder;
+    /* set font color */
+    color: #F9FAF8;
+}
+
+/* creating css id for fanclub-left-text id */
+#fanclub-left-text {
+    /* set font size */
+    font-size: 18px;
+    /* color of text */
+    color: #F9FAF8;
+}
+
+/* creating css id for fanclub-left-button id */
+#fanclub-left-button {
+    background-color: #8133ef;
+    color: #F9FAF8;
+    font-size: 18px;
+    padding: 7px;
+    width: 120px;
+    border-radius: 9px;
+}
+
+/* creating css class for fanclub-right */
+.fanclub-right {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* creating css class for img tags */
+img {
+    /* make image cover entire flex box */
+    object-fit: cover;
+    width: 100%;
+}
+
+/* creating css id for main-penny id */
+#fanclub-penny-image {
+    height: 80%;
+    align-self: flex-end;
+    border: 2px solid #F9FAF8;
+}
+
+/* creating css id for fun-facts-header */
+#fun-facts-header {
+    color:#8133ef;
+    text-align: center;
+    padding: 1em;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/* creating css class for fun-facts-container */
+.fun-facts-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-bottom: 6em;
+}
+
+/* creating css class for fun-facts-information */
+.fun-facts-information {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+    gap: .5em;
+}
+
+/* creating css id for fun-facts-penny-image */
+#fun-facts-penny-image {
+    border: 5px solid #d780ff;
+    /* defines the roundness of the image (> px value == more round) */
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* creating css class for fun-facts-image-subtext */
+.fun-facts-image-subtext {
+    text-align: center;
+    color: #8133ef;
+}
+
+/* creating css class for quote-container */
+.quote-container {
+    background-color: #d8afff;
+    color: #8133ef;
+}
+
+/* creating css class for quote-sub-container */
+.quote-sub-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 6em 20em;
+}
+
+/* creating css id for quote id */
+#quote {
+    font-size: 36px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+/* creating css id for quote-author id*/
+#quote-author {
+    text-align: right;
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.sign-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 12em;
+}
+
+.sign-up-sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8133ef;
+    padding: 3.5em 8em;
+    border-radius: 10px;
+    color: #F9FAF8;
+    gap: 10em;
+}
+
+.sign-up-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#sign-up-left-header {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#sign-up-left-text {
+    font-size: 18px;
+}
+
+#sign-up-right-button {
+    background-color: #8133ef;
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
+    font-size: 18px;
+    padding: 8px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #d8afff;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 20em;
+    text-align: center;
+}
+
+#github-link {
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: lighter;
+}
